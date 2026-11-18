@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+  --paper: #f7f5ee;
+  --ink: #252e25;
+  --muted: #4f5e51;
+  --green: #203f31;
+  --line: #dedfd3;
+  --white: #fffdf7;
+  --display: "Instrument Serif", Georgia, serif;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+p { line-height: 1.6; }
+a:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 3px solid #976820;
+  outline-offset: 3px;
+}
+.shell { width: min(1180px, 100% - 56px); margin-inline: auto; }
+.masthead { border-bottom: 1px solid var(--line); }
+.masthead-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.wordmark { font: 36px/1 var(--display); text-decoration: none; }
+.switch, .reset { min-height: 44px; display: inline-flex; align-items: center; font-size: .91rem; font-weight: 600; text-underline-offset: 4px; }
+.hero {
+  margin-block: 30px 24px;
+  padding: clamp(28px, 7vw, 76px);
+  border-radius: 24px;
+  color: var(--white);
+  background: radial-gradient(ellipse at 95% 5%, #40684e, transparent 70%), var(--green);
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; }
+h1 { font-size: clamp(3.1rem, 8vw, 6.6rem); line-height: .96; max-width: 13ch; }
+.hero p:last-child { max-width: 48ch; margin-bottom: 0; }
+.eyebrow { font-size: .76rem; font-weight: 700; letter-spacing: .105em; text-transform: uppercase; }
+.hero .eyebrow { color: #e7e2bc; margin: 0 0 14px; }
+.filters { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; }
+.filters > div { flex: 1 1 170px; min-width: 0; }
+.filters label { display: block; margin-bottom: 6px; font-size: .82rem; font-weight: 600; }
+select, .button {
+  min-height: 46px; border-radius: 10px; border: 1px solid var(--line); padding: 0 13px;
+  font: 600 .9rem Inter, system-ui, sans-serif;
+}
+select { width: 100%; background: var(--white); color: var(--ink); }
+.button { display: inline-flex; align-items: center; color: var(--white); background: var(--green); text-decoration: none; cursor: pointer; }
+.button:hover { background: #315b48; }
+.listing { margin-top: 34px; }
+.listing-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.listing-heading span { color: var(--muted); font-size: .9rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2rem; line-height: 1.08; }
+.cards { padding: 0; margin: 16px 0 44px; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr)); gap: 16px; }
+.card { border-radius: 18px; border: 1px solid var(--line); overflow: hidden; background: var(--white); display: flex; flex-direction: column; }
+.city-gem-card { width: 283px; max-width: 100%; height: 430px; }
+.card-image, .detail-image { display: block; width: 100%; object-fit: cover; aspect-ratio: 16 / 10; background: #e1e4d7; }
+.card-body { padding: 21px; flex: 1; display: flex; flex-direction: column; }
+.card-body p { color: var(--muted); margin: 10px 0; }
+.card-body .eyebrow { margin-top: 0; }
+.card h2 a, .card h3 a { text-decoration: none; }
+.card h2 a:hover, .card h3 a:hover { text-decoration: underline; }
+.card-footer { border-top: 1px solid var(--line); margin-top: auto; padding-top: 9px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: .85rem; }
+.card-footer span, .tag { color: var(--muted); overflow-wrap: anywhere; }
+.text-link { color: var(--green); min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; text-underline-offset: 4px; }
+.empty, .error, .loading { padding: 24px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); }
+.error { border-color: #9c3d35; color: #7d2721; }
+.detail { max-width: 760px; margin: 24px auto 50px; }
+.detail header { margin: 20px 0 25px; }
+.detail h1 { max-width: none; }
+.intro { font-size: 1.16rem; }
+.detail-image { border-radius: 18px; }
+.description { margin-top: 22px; white-space: pre-line; line-height: 1.6; }
+@media (max-width: 540px) {
+  .shell { width: calc(100% - 32px); }
+  .hero { margin-top: 16px; }
+  .filters > div { flex-basis: 100%; }
+}

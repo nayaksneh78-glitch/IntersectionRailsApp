@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><%= content_for(:title) || "InterSection | Neighbourhood guide" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "guest", media: "all" %>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="shell masthead-inner">
+        <%= link_to "InterSection", root_path, class: "wordmark" %>
+        <% if @property %>
+          <%= link_to "Change property", properties_path(select: 1), class: "switch" %>
+        <% end %>
+      </div>
+    </header>
+    <main class="shell"><%= yield %></main>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<% content_for :title, "#{@property.title} | InterSection" %>
+<section class="hero">
+  <p class="eyebrow">Your guide from <%= @property.title %></p>
+  <h1>Explore your neighbourhood.</h1>
+  <% if @property.description.present? %><p><%= @property.description %></p><% end %>
+  <% if @property.address.present? %><p><%= @property.address %></p><% end %>
+</section>
+
+<%= form_with url: property_path(@property), method: :get, local: true, class: "filters" do |form| %>
+  <div>
+    <%= form.label :category_id, "Category" %>
+    <%= form.collection_select :category_id, @categories, :id, :title, include_blank: "All categories", selected: @category&.id %>
+  </div>
+  <div>
+    <%= form.label :tag_id, "Tag" %>
+    <%= form.collection_select :tag_id, @tags, :id, :title, include_blank: "All tags", selected: @tag&.id %>
+  </div>
+  <div>
+    <%= form.label :neighbourhood_id, "Neighbourhood" %>
+    <%= form.collection_select :neighbourhood_id, @neighbourhoods, :id, :title, include_blank: "All neighbourhoods", selected: @neighbourhood&.id %>
+  </div>
+  <%= form.submit "Apply filters", class: "button" %>
+  <% if @category || @tag || @neighbourhood %>
+    <%= link_to "Clear", property_path(@property), class: "reset" %>
+  <% end %>
+<% end %>
+
+<section class="listing" aria-labelledby="places-title">
+  <div class="listing-heading">
+    <h2 id="places-title">Places to explore</h2>
+    <span><%= pluralize(@city_gems.size, "place") %></span>
+  </div>
+  <% if @city_gems.any? %>
+    <ul class="cards">
+      <%= render partial: "city_gems/card", collection: @city_gems, as: :city_gem %>
+    </ul>
+  <% else %>
+    <p class="empty"><%= @category || @tag || @neighbourhood ? "No places match these filters." : "This guide doesn’t have any published places yet." %></p>
+  <% end %>
+</section>

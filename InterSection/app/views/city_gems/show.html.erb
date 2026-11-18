@@ -1,0 +1,20 @@
+<% content_for :title, "#{@city_gem.title} | InterSection" %>
+<article class="detail">
+  <%= link_to "← Back to places", property_path(@property), class: "text-link" %>
+  <header>
+    <p class="eyebrow"><%= @city_gem.category.title %> · <%= @city_gem.neighbourhood.title %></p>
+    <h1><%= @city_gem.title %></h1>
+    <p class="intro"><%= @city_gem.short_desc %></p>
+  </header>
+  <% if @city_gem.image.present? %>
+    <%= image_tag @city_gem.image, alt: "", class: "detail-image", referrerpolicy: "no-referrer" %>
+  <% end %>
+  <% if @city_gem.long_desc.present? %>
+    <div class="description"><%= simple_format(@city_gem.long_desc, {}, sanitize_options: { tags: [], attributes: [] }) %></div>
+  <% end %>
+  <% unless @city_gem.direct_maps_url %>
+    <p><%= @city_gem.location %></p>
+  <% end %>
+  <p class="tag">#<%= @city_gem.tag.hashtag %></p>
+  <%= link_to "Open in Google Maps ↗", @city_gem.google_maps_url, target: "_blank", rel: "noopener noreferrer", class: "button" %>
+</article>

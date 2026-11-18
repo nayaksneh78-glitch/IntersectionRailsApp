@@ -1,0 +1,14 @@
+<li class="card">
+  <% if city_gem.image.present? %>
+    <%= image_tag city_gem.image, alt: "", class: "card-image", loading: "lazy", referrerpolicy: "no-referrer" %>
+  <% end %>
+  <div class="card-body">
+    <p class="eyebrow"><%= city_gem.category.title %> · <%= city_gem.neighbourhood.title %></p>
+    <h3><%= link_to city_gem.title, property_city_gem_path(@property, city_gem) %></h3>
+    <p><%= city_gem.short_desc %></p>
+    <div class="card-footer">
+      <span>#<%= city_gem.tag.hashtag %></span>
+      <%= link_to "Google Maps ↗", city_gem.google_maps_url, target: "_blank", rel: "noopener noreferrer", class: "text-link" %>
+    </div>
+  </div>
+</li>

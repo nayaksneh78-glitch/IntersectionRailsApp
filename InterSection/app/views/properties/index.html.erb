@@ -1,0 +1,20 @@
+<section class="hero">
+  <h1>Explore your neighbourhood.</h1>
+  <p>Choose where you’re staying to discover nearby places.</p>
+</section>
+
+<% if @properties.any? %>
+  <ul class="cards" aria-label="Properties">
+    <% @properties.each do |property| %>
+      <li class="card">
+        <div class="card-body">
+          <h2><%= link_to property.title, property_path(property) %></h2>
+          <% if property.description.present? %><p><%= property.description %></p><% end %>
+          <%= link_to "Explore guide →", property_path(property), class: "text-link" %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p class="empty">No property guides are available yet.</p>
+<% end %>

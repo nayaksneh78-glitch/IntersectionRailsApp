@@ -1,0 +1,276 @@
+{
+  "source_url": "https://section-l.notion.site/Sample-Data-3f012e50f75980628c68ce5a3bd10579",
+  "description_note": "Descriptions are paraphrased. Inferred import values are recorded separately from source fields.",
+  "properties": [
+    {
+      "title": "Section L Hatchobori",
+      "address": "1 Chome-9-10 Irifune, Chuo City, Tokyo 104-0042",
+      "description": "A quiet residential base near Ginza and Tokyo Station.",
+      "neighbourhoods": [
+        "Hatchobori"
+      ]
+    },
+    {
+      "title": "Section L Ginza East",
+      "address": "1 Chome-14-5 Shintomi, Chuo City, Tokyo 104-0041",
+      "description": "A neighbourhood stay between Ginza’s shops and Tsukiji’s food scene.",
+      "neighbourhoods": [
+        "Ginza",
+        "Hatchobori"
+      ]
+    },
+    {
+      "title": "Section L Residence Ginza",
+      "address": "7 Chome-10-5 Ginza, Chuo City, Tokyo 104-0061",
+      "description": "A base for galleries, luxury boutiques and fine dining.",
+      "neighbourhoods": [
+        "Ginza"
+      ]
+    }
+  ],
+  "neighbourhoods": [
+    {
+      "title": "Hatchobori",
+      "description": "A residential pocket with parks, local restaurants and easy access to Disneyland.",
+      "city": "Tokyo",
+      "map_pin": {
+        "latitude": 35.67452,
+        "longitude": 139.77761
+      },
+      "hashtag": {
+        "title": "Local Life",
+        "value": "#LocalLife",
+        "description": "Quiet parks, local dining and a distinctive library."
+      },
+      "tags": [
+        "Residential"
+      ]
+    },
+    {
+      "title": "Tsukiji",
+      "description": "A seafood district with fresh fish and specialist kitchenware.",
+      "city": "Tokyo",
+      "map_pin": {
+        "latitude": 35.66617,
+        "longitude": 139.77059
+      },
+      "hashtag": {
+        "title": "Sushi Town",
+        "value": "#SushiTown",
+        "description": "Watch seafood preparation and browse handcrafted culinary tools."
+      },
+      "tags": [
+        "Cheap-Eats",
+        "Historical"
+      ]
+    },
+    {
+      "title": "Ginza",
+      "description": "An entertainment district with luxury shops, galleries and gourmet dining.",
+      "city": "Tokyo",
+      "map_pin": {
+        "latitude": 35.66966,
+        "longitude": 139.76811
+      },
+      "hashtag": {
+        "title": "Endless Luxury",
+        "value": "#EndlessLuxury",
+        "description": "Browse small galleries between shopping and fine dining."
+      },
+      "tags": [
+        "Fancy"
+      ]
+    }
+  ],
+  "city_gems": [
+    {
+      "title": "Turret Coffee",
+      "category": "Food & Drink",
+      "short_description": "Matcha and seasonal lattes at a small independent café.",
+      "long_description": "Look for the red bench. The menu also features seasonal drinks and hot spiced cider.",
+      "google_maps_url": "https://maps.app.goo.gl/nftoMh5JJU4HDHjk8",
+      "image_url": "https://cms-media.section-l.co/20210513_Section_L_Ginza_9769_d5fc2129fc.jpg",
+      "neighbourhoods": [
+        "Ginza",
+        "Hatchobori",
+        "Tsukiji"
+      ],
+      "tags": [
+        "Cafes"
+      ]
+    },
+    {
+      "title": "Maru",
+      "category": "Food & Drink",
+      "short_description": "Wine and small plates in a tucked-away spot.",
+      "long_description": "Browse the wine shelves and try tapas such as asparagus gratin or anchovy butter fries.",
+      "google_maps_url": "https://maps.app.goo.gl/p732xJiykxpnDPaJ6",
+      "image_url": "https://cms-media.section-l.co/20210514_Section_L_Ginza_0284_7e0d8683bc.jpg",
+      "neighbourhoods": [
+        "Ginza",
+        "Hatchobori",
+        "Tsukiji"
+      ],
+      "tags": [
+        "Restaurants",
+        "International Cuisine",
+        "Bars"
+      ],
+      "source_id": 757,
+      "source_slug": "maru"
+    },
+    {
+      "title": "Nihombashi Sando",
+      "category": "Food & Drink",
+      "short_description": "A modern izakaya serving Japanese classics.",
+      "long_description": "Try sashimi, cream croquettes and sake from Nagano.",
+      "google_maps_url": "https://maps.app.goo.gl/gGq6y8YYTazMtGqd7",
+      "image_url": "https://cms-media.section-l.co/20210514_Section_L_Ginza_0199_5640316bd5.jpg",
+      "neighbourhoods": [
+        "Ginza",
+        "Hatchobori",
+        "Tsukiji"
+      ],
+      "tags": [
+        "Japanese Food",
+        "Restaurants"
+      ]
+    },
+    {
+      "title": "Postalco",
+      "category": "Shopping",
+      "short_description": "A Tokyo design studio and shop with roots in New York.",
+      "long_description": "The collection brings everyday design to stationery, bags and clothing.",
+      "google_maps_url": "https://maps.app.goo.gl/8oyR8zXPDStanhvH7",
+      "image_url": "https://cms-media.section-l.co/AM_0_S8_A9393_a86ea2198f.jpg",
+      "neighbourhoods": [
+        "Ginza"
+      ],
+      "tags": [
+        "Family-Friendly"
+      ]
+    },
+    {
+      "title": "FEELSEEN",
+      "category": "Shopping",
+      "short_description": "A shop with carefully selected artisan goods.",
+      "long_description": "A couple curates the collection in a building once used as quarters for kabuki performers.",
+      "google_maps_url": "https://goo.gl/maps/oiaa7X3sMC7CdeAW9",
+      "image_url": "https://cms-media.section-l.co/Section_L_2310_cfd718474d.jpg",
+      "neighbourhoods": [
+        "Ginza"
+      ],
+      "tags": [
+        "Souvenirs"
+      ]
+    },
+    {
+      "title": "Ginza Six Rooftop",
+      "category": "Culture",
+      "short_description": "A rooftop retreat with views of Ginza.",
+      "long_description": "Look for the small shrine and take in the street views from above.",
+      "google_maps_url": "https://goo.gl/maps/oLrCstHkyURAgXBM9",
+      "image_url": null,
+      "neighbourhoods": null,
+      "tags": null,
+      "inferred_import_values": {
+        "neighbourhoods": [
+          "Ginza"
+        ],
+        "tag": "Rooftops"
+      }
+    },
+    {
+      "title": "Cafe Ajito .N",
+      "category": "Food & Drink",
+      "short_description": "A café with a sheep figure at the entrance.",
+      "long_description": "The menu pairs lamb taco rice with drinks such as a date-and-almond latte.",
+      "google_maps_url": "https://maps.app.goo.gl/URRaoJrZVAKe4kGD6",
+      "image_url": null,
+      "neighbourhoods": null,
+      "tags": null,
+      "inferred_import_values": {
+        "neighbourhoods": [
+          "Hatchobori"
+        ],
+        "tag": "Cafes"
+      }
+    },
+    {
+      "title": "Teppozu Inari Shrine",
+      "category": "Culture",
+      "short_description": "A quiet shrine tucked into a residential area.",
+      "long_description": "Behind the shrine is a small Mount Fuji replica made with volcanic rock.",
+      "google_maps_url": "https://maps.app.goo.gl/6bqMjftANxJBWsT9A",
+      "image_url": null,
+      "neighbourhoods": null,
+      "tags": null,
+      "inferred_import_values": {
+        "neighbourhoods": [
+          "Hatchobori"
+        ],
+        "tag": "Shrines"
+      }
+    },
+    {
+      "title": "Senmaiya",
+      "category": "Food & Drink",
+      "short_description": "A small shop with a wide selection of rice balls.",
+      "long_description": "Choose from classic onigiri fillings and look for the brown-rice option.",
+      "google_maps_url": "https://maps.app.goo.gl/EHGjjr4zyvJKxjuv6",
+      "image_url": null,
+      "neighbourhoods": null,
+      "tags": null,
+      "inferred_import_values": {
+        "neighbourhoods": [
+          "Hatchobori"
+        ],
+        "tag": "Onigiri"
+      }
+    },
+    {
+      "title": "Shutoku Ganso",
+      "category": "Food & Drink",
+      "short_description": "An intimate omakase sushi counter in an alley.",
+      "long_description": "Choose from three courses at the eight-seat counter.",
+      "google_maps_url": "https://goo.gl/maps/cHWQmowv5T8ZcM5n6",
+      "image_url": "https://cms-media.section-l.co/Section_L_Tsukiji_City_Gems_6157_b7eeb7f3db.jpg",
+      "neighbourhoods": [
+        "Tsukiji"
+      ],
+      "tags": [
+        "Sushi",
+        "Japanese Food",
+        "Restaurants"
+      ]
+    },
+    {
+      "title": "Ichifuji",
+      "category": "Shopping",
+      "short_description": "A kitchenware shop for useful gifts and souvenirs.",
+      "long_description": "Browse cooking tools and tableware for something to take home.",
+      "google_maps_url": "https://goo.gl/maps/Xt5d17w7uAZVMUmb6",
+      "image_url": "https://cms-media.section-l.co/Section_L_Tsukiji_City_Gems_5842_f44d0f424f.jpg",
+      "neighbourhoods": [
+        "Tsukiji"
+      ],
+      "tags": [
+        "Souvenirs"
+      ]
+    },
+    {
+      "title": "Kunisuke Coffee",
+      "category": "Food & Drink",
+      "short_description": "A plant-covered coffee shop with a cosy interior.",
+      "long_description": "The café serves coffee and changing pastries, with Japanese-language puzzle games upstairs.",
+      "google_maps_url": "https://goo.gl/maps/UK2sJdRQJ8Gv43kM8",
+      "image_url": "https://cms-media.section-l.co/Section_L_Tsukiji_City_Gems_5633_5f71aeba22.jpg",
+      "neighbourhoods": [
+        "Tsukiji"
+      ],
+      "tags": [
+        "Cafes"
+      ]
+    }
+  ]
+}
